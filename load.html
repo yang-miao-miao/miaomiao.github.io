@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0
+				border:none ;
+			}
+			body{
+				font-size: 16px;
+				font-family: "微软雅黑";
+			}
+			form{
+				width: 300px;
+				height:750px;
+				margin: 20px auto;
+				padding: 20px;
+			}
+			fieldset{
+				background: url(https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00308-1066.jpg) repeat-y;
+				border-radius: 20px;
+			}
+			legend{
+				font-size: 20px;
+				font-weight: bold;
+				letter-spacing: 5px;
+				text-align: center;
+				text-shadow: 5px;
+			}
+			p{
+				margin-top: 5px;
+				padding-left: 30px;
+			}
+			input,textarea{
+				width: 150px;
+				height: 20px;
+				line-height: 30px;
+				border: 1px solid #FF0000;
+				border-radius: 5px;
+			}
+			textarea{
+				min-height: 200px;
+			}
+			label{
+				width: 80px;
+				display: inline-block;
+				text-align: right;
+				padding-right: 10px;
+			}
+			.buttons input{
+				width: 60px;
+				height: 30px;
+				margin-left: 40px;
+			}
+			.buttons{
+				margin-left: 50px;
+			}
+			a{
+				border: 2px solid #0000FF;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post" autocomplete="off">
+			<fieldset>
+				<legend>用户登录</legend>
+				<p>
+					<label >姓名:</label>
+					<input type="text" name="xm" required="true" value="直接点击提交即可"/>
+				</p>
+			    <p>
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" required="required"/>
+				</p>
+				<p>
+					<label for="web">主要使用的学习网站:</label>
+					<input type="url" name="myurl" id="web"/ list="urllist">
+					<datalist>
+						<option>百度文库</option>
+						<option>百度百科</option>
+					</datalist>
+				</p>
+			    <p>
+					<label for="card">身份证号:</label>
+					<input type="text" name="card" id="card" required="required" max=18 />
+				</p>
+			    <p>
+					<label for="number">年龄:</label>
+					<input type="number" id="number" min="0" max="100" step="1"/>
+				</p>
+			    <p>
+					<label for="gongzi">工资:</label>
+					<input type="range" id="gongzi" max=100 min=1/>
+				</p>
+		    	<p>
+					<label for="message">其他:</label>
+					<input id="message" type="textarea" cols="10" rows="5"/>
+				</p>
+				<div class="buttons">
+					<a href="网页框架.html">提交</a>
+			        <input type="reset" />
+				</div>
+				
+			</fieldset>
+		</form>
+	</body>
+</html>
+ 
