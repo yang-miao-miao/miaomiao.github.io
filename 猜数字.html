@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<script>
+			var num=Math.floor(Math.random()*100+1);
+			do{
+				var guess=parseInt(prompt());
+				if(guess==num)
+				{
+					alert("恭喜你，回答正确");
+				}
+				else if(guess>num)
+				{
+					alert("数字大了")
+					go_on=confirm("是否继续?")
+				}
+				else{
+					alert("数字小了")
+					go_on=confirm("是否继续？")
+				}
+			}while(go_on)
+			
+		</script>
+	</body>
+</html>
